@@ -1,0 +1,45 @@
+.container {
+    max-width: 1200px;
+    // centralizar o container
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: 0 auto; // resumo das duas linhas acima
+  
+    // coloco uma borda pra teste
+    // border-width: 1px;
+    // border-style: solid;
+    // border-color: red;
+    border: 1px solid red; // resumo das 3 linhas acima
+  
+    display: flex;
+    flex-wrap: wrap;
+  
+    .coluna {
+      border: 1px solid red;
+      // a largura deste elemento
+      // deve levar em consideração a borda
+      // computadata por dentro
+      box-sizing: border-box;
+  
+      flex-basis: 50%;
+  
+      &.coluna-3 {
+        flex-basis: 25%;
+  
+        @media (min-width: 768px) and (max-width: 1024px) {
+          flex-basis: 50%;
+        }
+        @media (max-width:768px){
+          flex-basis: 100%;
+        }
+      }
+  
+      // quando a tela tiver um tamanho máximo de 768px
+      // isto é, uma tela pequena,
+      // a coluna deve ocupar 100% da largura
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+      }
+    }
+  }
+  

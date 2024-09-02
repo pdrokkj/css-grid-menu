@@ -1,0 +1,15 @@
+// Precisa ser um dos primeiros
+@import "reset"; // https://meyerweb.com/eric/tools/css/reset/
+
+// Aqui são as variáveis globais
+// Precisa estar ao topo 
+@import "vars"; 
+
+// Aqui vamos inserir os estilos de tipografia
+// e outros estilos globais
+@import "layout"; 
+
+// Aqui vamos inserir os estilos de GRID
+@import "grid"; 
+// Aqui vamos inserir os estilos de MENU
+@import "menu"; 
