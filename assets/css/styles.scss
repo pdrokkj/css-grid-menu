@@ -2,14 +2,27 @@
 @import "reset"; // https://meyerweb.com/eric/tools/css/reset/
 
 // Aqui são as variáveis globais
-// Precisa estar ao topo 
-@import "vars"; 
+// Precisa estar ao topo
+@import "vars";
 
 // Aqui vamos inserir os estilos de tipografia
 // e outros estilos globais
-@import "layout"; 
+@import "layout";
 
 // Aqui vamos inserir os estilos de GRID
-@import "grid"; 
+@import "grid";
 // Aqui vamos inserir os estilos de MENU
-@import "menu"; 
+@import "menu";
+
+.pai {
+  .filho {
+    background-color: saddlebrown;
+  }
+  .filha {
+    background-color: lightgreen;
+
+    &.rebelde {
+      background-color: red;
+    }
+  }
+}

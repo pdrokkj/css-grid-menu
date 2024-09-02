@@ -85,4 +85,14 @@ body {
   .container .coluna {
     flex-basis: 100%;
   }
+}
+
+.pai .filho {
+  background-color: saddlebrown;
+}
+.pai .filha {
+  background-color: lightgreen;
+}
+.pai .filha.rebelde {
+  background-color: red;
 }/*# sourceMappingURL=styles.css.map */
